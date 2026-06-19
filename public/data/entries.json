@@ -1,32 +1,182 @@
 [
   {
-    "id": "3",
-    "date": "2026-06-19",
+    "id": "18",
+    "date": "2026-06-16",
+    "source": "facebook",
+    "title": "Portfolio Risk Analyzer Prompt — วิเคราะห์พอร์ตจากภาพ by EarthhEvans",
+    "summary": "System prompt สำหรับ Senior Portfolio Strategist วิเคราะห์พอร์ตจากภาพ Screenshot ครบวงจร: Extract position → Look-through ETF → Concentration → Correlation ทั้ง Normal/Crisis regime → Risk Contribution (%Capital vs %Risk) → Stress Test 4 scenarios → Position Sizing → Rebalancing Engine พร้อม Tax-aware Trade List คำสั่งลัด: /full /xray /risk /stress /rebalance /visual วิธีใช้: copy prompt นี้ไปวางเป็น message แรก แล้วแนบรูป screenshot พอร์ตได้เลย",
+    "url": null,
+    "tags": ["การลงทุน"],
+    "read": false
+  },
+  {
+    "id": "17",
+    "date": "2026-06-13",
+    "source": "facebook",
+    "title": "รัฐบาลสหรัฐสั่งระงับ Claude Fable 5 และ Mythos 5 — ประเด็นอธิปไตย AI",
+    "summary": "รัฐบาลสหรัฐออก export control directive (12 มิ.ย. 17:21 ET) สั่งระงับ Fable 5 + Mythos 5 สำหรับ foreign nationals ทุกคน Anthropic แยก realtime ไม่ได้เลยปิดทั้งหมด สาเหตุคือมีบริษัทอ้าง jailbreak ได้ แต่ Anthropic ยืนยันเป็นแค่ช่องโหว่เล็กที่รู้กันอยู่แล้ว โมเดลอื่น (GPT-5.5) ก็ทำได้ Fable ผ่าน red-team หลายพันชม.ร่วมกับ UK AISI ใช้ defense-in-depth + เก็บ data 30 วัน ยังไม่เคยเจอ universal jailbreak ประเด็นใหญ่ที่ตามมา: AI Sovereignty — ถ้าสหรัฐ block ได้ทุกเมื่อ ประเทศที่พึ่ง AI ต่างชาติเสี่ยงมาก ไทยมีโอกาสในขา post-training + compute (ค่าไฟถูก) มากกว่าทำ foundation model เอง + regulatory risk ลาม SpaceX (มี GPU ที่ Anthropic ใช้)",
+    "url": "https://www.anthropic.com/news/fable-mythos-access",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "16",
+    "date": "2026-06-12",
     "source": "x",
-    "title": "ตัวอย่าง Entry จาก X",
-    "summary": "นี่คือตัวอย่าง entry จาก X (Twitter) ใช้ทดสอบการแสดงผลและ filter",
-    "url": "https://x.com",
-    "tags": ["example"],
+    "title": "เปรียบเทียบ Webull vs Dime vs WealthX — เคสบัญชีม้าและการออกแบบระบบ",
+    "summary": "Webull ถูก กมธ.ปปง.เรียกสอบ KYC (6 มิ.ย. 2569) หลังพบช่องโหว่ระบบถอนเงิน realtime + ตรวจหลักฐานด้วยภาพ book bank ที่ AI ปลอมได้ ทำให้เกิดบัญชีม้า เงินหมุนเวียน >100 ล้าน/เดือน Webull แก้ไขเสร็จใน 1 สัปดาห์ Dime ป้องกันด้วย Dime Save (บัญชี KKB) เป็นตัวกลางทำให้ชื่อตรงกันเสมอ แต่ถอนเงินก้อนใหญ่ช้า (จำกัด 2 ล้าน/วัน) WealthX ใช้ ATS/QR ที่ verify แล้วเป็นตัวตั้งถอน ปลอดภัยโดยไม่ลดความเร็ว",
+    "url": null,
+    "tags": ["การลงทุน"],
+    "read": false
+  },
+  {
+    "id": "15",
+    "date": "2026-06-12",
+    "source": "x",
+    "title": "S&P 500 ถือ 10 ปี ไม่ได้แปลว่าไม่ขาดทุน — Rolling Return Distribution (1871-2026)",
+    "summary": "ข้อมูล rolling 10-year annualized return ของ S&P 500 ตั้งแต่ 1871-2026: Best = 21.28%/ปี ($100K → $684K), 85th Percentile = 15.28%, Median = 8.73% (ค่าปกติที่สุด), 15th Percentile = 4.22%, Worst = -5.38%/ปี (เช่นคนเริ่มลงทุนตอน Dot-Com Bubble จุดสูงสุด ขาดทุนเฉลี่ยทุกปีตลอด 10 ปี) ข้อคิด: '10% ต่อปี' ไม่ใช่ตัวเลขคงที่ แต่เป็น range of outcomes กว้างมาก คำถามสำคัญคือเราเข้าตอนไหนของ distribution (Valuation ตอนเข้าสำคัญมาก)",
+    "url": "https://x.com/kafaak/status/2065303679285268740",
+    "tags": ["การลงทุน"],
+    "read": false
+  },
+  {
+    "id": "14",
+    "date": "2026-06-12",
+    "source": "x",
+    "title": "เก่งจริงแล้วงานเยอะขึ้น — กำลังถูก Groom หรือถูก Exploit?",
+    "summary": "แยก 4 สถานการณ์เมื่อคนเก่งงานเยอะขึ้น: 1) ถูก exploit ตรงๆ → คุยเรื่อง scope/compensation กับหัวหน้า 2) กำลังถูก groom ให้โต → ถามว่างานนี้สอนอะไร พาไปสู่ role ใหญ่กว่าไหม หัวหน้าต้องสื่อสารชัด 3) เก่งแต่บริหารตัวเองไม่เป็น ติดนิสัย 'เดี๋ยวกูทำเอง' จนเป็น bottleneck ต้องฝึก Prioritization/Delegation 4) อันตรายสุด: ถูก exploit แต่ใช้คำว่า groom กลบเกลื่อน สัญญาณคือ 'อดทนอีกหน่อย' ซ้ำๆ ไม่มี timeline ชัดเจน — วิธีแยกคือดู trajectory ไม่ใช่คำพูด คนถูก groom จริงเห็นการเติบโตจับต้องได้",
+    "url": "https://x.com/kantcoth/status/2065103595058729047",
+    "tags": ["อื่นๆ"],
+    "read": false
+  },
+  {
+    "id": "13",
+    "date": "2026-06-12",
+    "source": "facebook",
+    "title": "Loop Engineering — ทำไม Agent ยุคใหม่ต้องการมากกว่า Prompt",
+    "summary": "Loop Engineering คือการออกแบบ process ที่ AI ทำงานวนซ้ำแบบมี memory, verification, boundaries ไม่ใช่แค่ prompt-response เดิม โครงสร้าง 3 ชั้น: Harness (Claude Code = terminal harness เหมาะ solo/ทีมเล็ก) → Loop (วน run-test-fix) → Runtime (สำหรับ production รันยาวข้ามคืน) Agent ต้องมี 'computer' ของตัวเอง: filesystem, shell, package manager, persistent state, sandbox แยก Stateful cron (ต้องจำ state เดิม เช่น monitoring) vs Stateless cron (เริ่มใหม่ได้ เช่น batch) ประเด็นสำคัญสุด: Comprehension Debt — AI ship fix เร็วแต่ทีมไม่เข้าใจระบบที่ตัวเองดูแลอีกต่อไป",
+    "url": null,
+    "tags": ["AI"],
+    "read": true
+  },
+  {
+    "id": "12",
+    "date": "2026-06-12",
+    "source": "facebook",
+    "title": "Understand Anything — แปลงโค้ดเบสเป็น Knowledge Graph (56K+ stars)",
+    "summary": "Open source tool โดย Yuxiang Lin (Georgia Tech) แปลงโค้ดเบสขนาดใหญ่เป็น Interactive Knowledge Graph ใช้ Tree-sitter วิเคราะห์โครงสร้างโค้ด สร้าง graph ของไฟล์/ฟังก์ชัน/คลาส มี Guided Tour ทำความเข้าใจโค้ดเบส และประเมิน impact ก่อน commit ใช้ร่วมกับ Claude Code, Codex, Cursor, GitHub Copilot ได้ จาก 32 followers สู่ 56,400+ GitHub stars — ตรงกับเทคนิค 'code review graph' ที่เคย save ไว้",
+    "url": "https://github.com/Egonex-AI/Understand-Anything",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "11",
+    "date": "2026-06-12",
+    "source": "facebook",
+    "title": "ภาพประวัติศาสตร์: แสงเป็นทั้งคลื่นและอนุภาคในเวลาเดียวกัน (EPFL 2015)",
+    "summary": "ทีม EPFL นำโดย Fabrizio Carbone ถ่ายภาพแสงที่แสดงคุณสมบัติทั้ง 'คลื่น' และ 'อนุภาค' พร้อมกันได้สำเร็จ ยืนยันทฤษฎี Wave-particle duality วิธีคือยิงเลเซอร์ใส่เส้นลวดนาโนให้แสงสะท้อนชนกันเป็นคลื่นนิ่ง แล้วยิงอิเล็กตรอนผ่านไปชนโฟตอน การเปลี่ยนความเร็วอิเล็กตรอนคือหลักฐานด้านอนุภาค ส่วนรูปแบบคลื่นที่เห็นคือหลักฐานด้านคลื่น ตีพิมพ์ใน Nature Communications 2015",
+    "url": null,
+    "tags": ["อื่นๆ"],
+    "read": false
+  },
+  {
+    "id": "10",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "Senior Engineer 10 ปี บอก AI กำลังทำลาย Moat ที่สะสมมาทั้งชีวิต",
+    "summary": "SE สาย FinTech 10 ปีรู้สึกว่า Domain Expertise (Payment, PCI, Ledger, Distributed Systems) ที่เคยเป็น moat กำลังถูก prompt แทนได้ จุดช็อกคือ AI เขียน Design Doc ได้ดีกว่าที่คิด debug bug ที่เคยใช้ 2 วันได้ใน one-shot คำถามคือถ้าความรู้เฉพาะทางถูก commoditize แล้วจะสร้าง competitive advantage ยังไง บทความ viral ใน Hacker News",
+    "url": "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "9",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "4 เทคนิคจัดการ Context ประหยัด Token ใน Claude Code",
+    "summary": "4 เทคนิคลด token: 1) /clear ล้าง context เริ่มใหม่ / /compact บีบอัด context ให้สั้นแต่ยังเข้าใจเหมือนเดิม 2) /caveman skill ใน .sh ให้ Claude ตอบสั้นกระชับได้ใจความ 3) Code review graph plugin ให้ Claude เห็น code เป็น graph ไม่ต้องอ่านทุกไฟล์ ประหยัด input token 4) แบ่งไฟล์ใหญ่ให้เล็กลง เช่น claude.md แยกเป็น agents.md + ไฟล์ agent แต่ละตัว เหมาะมากสำหรับคนที่จะเรียน Claude Code เดือน August",
+    "url": null,
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "8",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "Made with Claude — คลังผลงานคนไทยที่สร้างด้วย Claude",
+    "summary": "เว็บรวมผลงานคนไทยที่สร้างด้วย Claude จาก community 550+ comments มีเว็บอสังหา สแกนหุ้น แอพวางแผนเที่ยว เกม RPG คำนวณภาษี ระบบ HR ฯลฯ features: hover เห็นเว็บจริง, filter ตามหมวด, เรียงตามความฮอต, โหวตดันโปรเจคได้ สร้างใน 2 ชั่วโมง โดยผู้พัฒนา WealthX (peesamac) เป้าหมายเป็นแรงบันดาลใจว่ายุคนี้ใครก็สร้างของจริงได้",
+    "url": "https://madewithclaude.peesamac.com",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "7",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "รีวิว 3 เดือน ลงทุน 2 ล้าน ขายเดือนละ 20,000 ใน WealthX (TLWORLD-X)",
+    "summary": "ลงทุน 2,000,000 บาทใน TLWORLD-X ตั้งขายเดือนละ 20,000 ผ่าน Yieldtech ใน WealthX เดือน 1 (เม.ย.) ได้ 17,000 / เดือน 2 (พ.ค.) ได้ 20,000 / เดือน 3 (มิ.ย.) ได้ 20,000 ปัจจุบันเงินต้นเพิ่มเป็น 2,143,000 (+143,000) แม้ตลาดเทคร่วงแรง TLWORLD-X กระจายหุ้น 10,000 บริษัทค่าจัดการต่ำมาก ข้อดีด้านภาษี: ยกเว้นภาษีขายกองทุน ไม่โดนภาษีหุ้นนอก 35% และภาษีมรดกสหรัฐ 40% ดีกว่ากองทุนปันผลที่ถูกหัก ณ ที่จ่าย 10%",
+    "url": null,
+    "tags": ["การลงทุน"],
+    "read": false
+  },
+  {
+    "id": "6",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "Claude Fable 5 — มุมมองสาย SWE: SWE-Bench, FrontierCode และความโหดของ Agentic Coding",
+    "summary": "Fable 5 โหดสุดใน Software Engineering: SWE-Bench Pro 80.3% ทิ้งห่าง Opus 4.8 (69.2%) และ GPT-5.5 (58.6%) Stripe ใช้ migrate Ruby codebase 50M บรรทัดเสร็จวันเดียว ปกติทั้งทีมต้องทำ 2 เดือน เก่งขึ้นเรื่อง Long-context memory, Vision→Code และ Agentic coding ต่อเนื่องยาว Project Glasswing partners: AWS, Apple, Google, Microsoft, Broadcom, Cisco, CrowdStrike, NVIDIA, Palo Alto Networks",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "5",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "Claude Fable 5 — สรุปครบ benchmark, ราคา และวิธีใช้ให้คุ้ม",
+    "summary": "Fable 5 = Mythos-class model ตัวแรกสำหรับคนทั่วไป เก่งสุดใน agentic coding (SWE-Bench 80.3% vs Opus 69.2% vs GPT-5.5 58.6%) FrontierCode ยิ่งใช้ budget เยอะยิ่งทิ้งห่าง ราคา $10/$50 per million tokens กิน quota 2x ในแผน subscription ใช้ฟรีถึง 22 มิ.ย. หลังจากนั้นต้องซื้อ usage credits แยก strategy: ใช้ Sonnet/Opus งานทั่วไป เก็บ Fable ไว้ยิงงานใหญ่เท่านั้น",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "4",
+    "date": "2026-06-10",
+    "source": "facebook",
+    "title": "Claude Fable 5 และ Mythos 5 — Anthropic เปิดตัว 9 มิถุนายน 2026",
+    "summary": "Fable 5 คือ Mythos-class model ตัวแรกที่เปิดให้คนทั่วไปใช้ได้ ทำได้ดีกว่า Opus 4.8 ชัดเจนใน agentic coding (SWE-Bench 80.3% vs 69.2%) งานยิ่งยาวยิ่งทิ้งห่าง context window 1M tokens ราคา $10/$50 per million tokens คำถามด้าน cybersecurity/biology/chemistry fallback ไปให้ Opus 4.8 แทน (<5% ของการใช้งาน) ใช้ฟรีใน Pro/Max/Team ถึง 22 มิ.ย. หลังจากนั้นต้องใช้ usage credits",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "tags": ["AI"],
+    "read": false
+  },
+  {
+    "id": "3",
+    "date": "2026-06-09",
+    "source": "facebook",
+    "title": "สงครามเพจการเงินไทย: หุ้นสหรัฐฟองสบู่หรือแค่แพง?",
+    "summary": "CAPE ~40x สูงสุดอันดับ 2 ใน 140 ปี แต่ต่างจากดอตคอมตรงที่ Hyperscaler มีกำไรจริง ความเสี่ยงจริงคือ ROI ของ AI — ลงทุนไป $600B แต่รายได้ตรงแค่ ~$25B ปีที่ผ่านมา VT +29% vs BTC -33% บทสรุปทั้งสองฝั่งเห็นตรงกันว่าตลาดจะปรับฐานแรง แค่ไม่ใช่ฟองสบู่ 100 ปี — ปมจริงคืออย่าแขวนทั้งชีวิตไว้กับความเชื่อเดียว",
+    "url": null,
+    "tags": ["การลงทุน"],
     "read": false
   },
   {
     "id": "2",
-    "date": "2026-06-18",
+    "date": "2026-06-09",
     "source": "facebook",
-    "title": "ตัวอย่าง Entry ที่สอง",
-    "summary": "entry ที่สองของระบบ ทดสอบ tag filter และ mark as read",
-    "url": "https://www.facebook.com",
-    "tags": ["example", "test"],
+    "title": "108 คำถามการลงทุน ถามเอง-ตอบเอง by EarthhEvans",
+    "summary": "คู่มือการลงทุนครบวงจร 108 ข้อ แบ่ง 5 ตอน: ETF/กองทุน, หุ้นรายตัว/งบการเงิน/Valuation, Options ทุก Strategy, บริหารพอร์ตและ Mindset เขียนภาษาไทยเข้าใจง่าย เน้น Framework คิดระยะยาว",
+    "url": null,
+    "tags": ["การลงทุน"],
     "read": false
   },
   {
     "id": "1",
-    "date": "2026-06-17",
+    "date": "2026-06-09",
     "source": "facebook",
-    "title": "ตัวอย่าง Entry แรก",
-    "summary": "entry แรกที่ mark as read แล้ว ทดสอบการเก็บสถานะใน localStorage",
-    "url": "https://www.facebook.com",
-    "tags": ["test"],
-    "read": true
+    "title": "การลงทุน 101 by EarthhEvans",
+    "summary": "e-book มือใหม่ลงทุนตั้งแต่ศูนย์ 14 บท ตั้งแต่ \"ทำไมต้องลงทุน\" ไปถึงสิ่งที่ไม่รู้ว่าต้องรู้ เขียนแบบอ่านง่าย ราคา 19 บาท รายได้ช่วยทำหมันแมวจร",
+    "url": "https://drive.google.com/file/d/13H79WQqrCtoY-A6VRJ3i_vnmpp5Gfkg9/view",
+    "tags": ["การลงทุน"],
+    "read": false
   }
 ]
