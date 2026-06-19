@@ -3,6 +3,8 @@ export default function FilterBar({
   sourceFilter, onSourceFilter,
   tagFilter, onTagFilter,
   allTags,
+  dateFrom, onDateFrom,
+  dateTo, onDateTo,
 }) {
   const sources = ['all', 'facebook', 'x']
   const sourceLabel = { all: 'All', facebook: 'Facebook', x: 'X' }
@@ -28,6 +30,31 @@ export default function FilterBar({
             {sourceLabel[s]}
           </button>
         ))}
+      </div>
+
+      <div className="filter-group">
+        <span className="filter-label">Date:</span>
+        <input
+          type="date"
+          className="date-input"
+          value={dateFrom}
+          onChange={e => onDateFrom(e.target.value)}
+        />
+        <span className="date-sep">–</span>
+        <input
+          type="date"
+          className="date-input"
+          value={dateTo}
+          onChange={e => onDateTo(e.target.value)}
+        />
+        {(dateFrom || dateTo) && (
+          <button
+            className="filter-btn"
+            onClick={() => { onDateFrom(''); onDateTo('') }}
+          >
+            ✕
+          </button>
+        )}
       </div>
 
       {allTags.length > 0 && (

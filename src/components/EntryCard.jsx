@@ -12,11 +12,7 @@ export default function EntryCard({ entry, onToggleRead }) {
         <span className="entry-card__date">{formatDate(entry.date)}</span>
       </div>
 
-      <h2 className="entry-card__title">
-        <a href={entry.url} target="_blank" rel="noopener noreferrer">
-          {entry.title}
-        </a>
-      </h2>
+      <h2 className="entry-card__title">{entry.title}</h2>
 
       {entry.summary && (
         <p className="entry-card__summary">{entry.summary}</p>
@@ -30,12 +26,24 @@ export default function EntryCard({ entry, onToggleRead }) {
         </div>
       )}
 
-      <button
-        className={`read-btn${entry.read ? ' read-btn--read' : ''}`}
-        onClick={() => onToggleRead(entry.id)}
-      >
-        {entry.read ? 'Mark unread' : 'Mark read'}
-      </button>
+      <div className="entry-card__actions">
+        <button
+          className={`read-btn${entry.read ? ' read-btn--read' : ''}`}
+          onClick={() => onToggleRead(entry.id)}
+        >
+          {entry.read ? 'Mark unread' : 'Mark read'}
+        </button>
+        {entry.url && (
+          <a
+            href={entry.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="source-link"
+          >
+            ดูต้นทาง ↗
+          </a>
+        )}
+      </div>
     </article>
   )
 }

@@ -24,6 +24,8 @@ export default function App() {
   const [search, setSearch] = useState('')
   const [sourceFilter, setSourceFilter] = useState('all')
   const [tagFilter, setTagFilter] = useState('')
+  const [dateFrom, setDateFrom] = useState('')
+  const [dateTo, setDateTo] = useState('')
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/entries.json`)
@@ -57,6 +59,8 @@ export default function App() {
   const visible = entries
     .filter(e => sourceFilter === 'all' || e.source === sourceFilter)
     .filter(e => !tagFilter || e.tags.includes(tagFilter))
+    .filter(e => !dateFrom || e.date >= dateFrom)
+    .filter(e => !dateTo || e.date <= dateTo)
     .filter(e => {
       if (!search.trim()) return true
       const q = search.toLowerCase()
@@ -81,6 +85,10 @@ export default function App() {
           tagFilter={tagFilter}
           onTagFilter={setTagFilter}
           allTags={allTags}
+          dateFrom={dateFrom}
+          onDateFrom={setDateFrom}
+          dateTo={dateTo}
+          onDateTo={setDateTo}
         />
         {loading ? (
           <p className="loading">Loading…</p>

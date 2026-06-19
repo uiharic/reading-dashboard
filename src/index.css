@@ -205,6 +205,12 @@ a:hover { text-decoration: underline; }
   border-radius: 4px;
 }
 
+.entry-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .read-btn {
   font-size: 0.76rem;
   padding: 3px 10px;
@@ -218,6 +224,39 @@ a:hover { text-decoration: underline; }
 .read-btn:hover {
   border-color: var(--text-secondary);
   color: var(--text-secondary);
+}
+
+.source-link {
+  font-size: 0.76rem;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  transition: all 0.15s;
+}
+.source-link:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+  background: rgba(10,132,255,0.08);
+}
+
+/* ── Date filter ─────────────────────────── */
+.date-input {
+  padding: 4px 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  outline: none;
+  color-scheme: dark;
+  transition: border-color 0.15s;
+}
+.date-input:focus { border-color: var(--accent); }
+
+.date-sep {
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 /* ── Responsive ──────────────────────────── */
