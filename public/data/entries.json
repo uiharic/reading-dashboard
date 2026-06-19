@@ -1,0 +1,32 @@
+[
+  {
+    "id": "3",
+    "date": "2026-06-19",
+    "source": "x",
+    "title": "ตัวอย่าง Entry จาก X",
+    "summary": "นี่คือตัวอย่าง entry จาก X (Twitter) ใช้ทดสอบการแสดงผลและ filter",
+    "url": "https://x.com",
+    "tags": ["example"],
+    "read": false
+  },
+  {
+    "id": "2",
+    "date": "2026-06-18",
+    "source": "facebook",
+    "title": "ตัวอย่าง Entry ที่สอง",
+    "summary": "entry ที่สองของระบบ ทดสอบ tag filter และ mark as read",
+    "url": "https://www.facebook.com",
+    "tags": ["example", "test"],
+    "read": false
+  },
+  {
+    "id": "1",
+    "date": "2026-06-17",
+    "source": "facebook",
+    "title": "ตัวอย่าง Entry แรก",
+    "summary": "entry แรกที่ mark as read แล้ว ทดสอบการเก็บสถานะใน localStorage",
+    "url": "https://www.facebook.com",
+    "tags": ["test"],
+    "read": true
+  }
+]
